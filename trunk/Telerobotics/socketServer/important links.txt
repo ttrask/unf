@@ -1,0 +1,3 @@
+http://socket.io/download/
+http://nodejs.org/
+http://socket.io/get-started/chat/
