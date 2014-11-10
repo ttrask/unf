@@ -4,13 +4,13 @@ var io = require('socket.io')(http);
 var notifier = require('node-notifier');
 var twilio = require('twilio');
 
-var accountSid = 'AC11b6f70fcc26ab92a3d053a760f63915'; 
-var authToken = '9296259abe65f59554fad9e18a136cd1'; 
-var client = require('twilio')(accountSid, authToken);
-
-
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
+});
+
+
+app.get('/ping.html', function(req, res){
+  res.sendFile(__dirname + '/ping.html');
 });
 
 io.on('connection', function(socket){
@@ -59,6 +59,6 @@ io.on('connection', function(socket){
 });
 
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(4000, function(){
+  console.log('listening on *:4000');
 });
