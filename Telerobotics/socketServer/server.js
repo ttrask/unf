@@ -19,25 +19,28 @@ util.puts('Press Ctrl + C to stop.');
 
 
 var pong = io.of('/pong').on('connection', function(socket){
-	  console.log('pong connected');
-	  socket.join('pongClient');
+	 console.log('pong connected');
+	 socket.room = 'pongClient';	 
+	 socket.join('pongClient');
 	 
 	 socket.on('pong', function(){
-		io.to('pingClient').emit('pong');
-		console.log('PING MOTHERFUCKER');
+		ping.emit('pong');
+		console.log('PONG MOTHERFUCKER');
 	 });
-});
+});	
 
 var ping = io.of('/ping').on('connection', function(socket){
-	  console.log('ping connected');
-	  socket.join('pingClient');
-	 
-	 socket.on('ping', function(){
-		io.to('pongClient').emit('ping');
-		console.log('PONG MOTHERFUCKER');
-	
-	 });
-});
+		socket.room = 'pingClient';
+		console.log('ping connected');
+		socket.join('pingClient');
+	  
+		socket.on('ping', function(){
+			pong.emit('ping');
+			console.log('PING MOTHERFUCKER');
+		});
+		
+ });
+
 
 
 io.on('connection', function(socket){
