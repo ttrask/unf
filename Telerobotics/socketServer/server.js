@@ -17,6 +17,29 @@ util.puts('Serving web on ' + port + '...');
 util.puts('Press Ctrl + C to stop.');
 */
 
+
+var pong = io.of('/pong').on('connection', function(socket){
+	  console.log('pong connected');
+	  socket.join('pongClient');
+	 
+	 socket.on('pong', function(){
+		io.to('pingClient').emit('pong');
+		console.log('PING MOTHERFUCKER');
+	 });
+});
+
+var ping = io.of('/ping').on('connection', function(socket){
+	  console.log('ping connected');
+	  socket.join('pingClient');
+	 
+	 socket.on('ping', function(){
+		io.to('pongClient').emit('ping');
+		console.log('PONG MOTHERFUCKER');
+	
+	 });
+});
+
+
 io.on('connection', function(socket){
   console.log('a user connected');
   socket.broadcast.emit('User Connected');
