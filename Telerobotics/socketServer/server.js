@@ -1,17 +1,21 @@
-var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+//var app = require('express');
+//var http = require('http').Server(app);
+//var app = require('http').createServer(handler)
+var io = require('socket.io').listen(1337);
 var notifier = require('node-notifier');
 var twilio = require('twilio');
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
-});
+/*
+var util = require('util'),
+    connect = require('connect'),
+	serveStatic = require('serve-static'),
+    port = 1337;
 
+connect().use(serveStatic(__dirname)).listen(port);
 
-app.get('/ping.html', function(req, res){
-  res.sendFile(__dirname + '/ping.html');
-});
+util.puts('Serving web on ' + port + '...');
+util.puts('Press Ctrl + C to stop.');
+*/
 
 io.on('connection', function(socket){
   console.log('a user connected');
@@ -56,9 +60,4 @@ io.on('connection', function(socket){
     console.log('message: ' + msg);
 	io.emit('chat', msg);
   });
-});
-
-
-http.listen(4000, function(){
-  console.log('listening on *:4000');
 });

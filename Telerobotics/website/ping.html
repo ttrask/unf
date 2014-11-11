@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Socket.IO chat</title>
+    <title>Ping test</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
@@ -16,8 +16,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 	<script>
 	
-	 var socket = io();
-	 var time = new Date();
+	 var socket = io.connect('http://localhost:1337');
+	 var startTime;
 	 function postback(){
 		socket.emit('chat', $('#m').val());
 		$('#m').val('');
@@ -28,14 +28,16 @@
 		socket.on('chat', function(msg){
 			$('#messages').append($('<li>').text(msg));
 		})
-		.on("pingReturn", function(startTime){
-			var interval = time.getDate() - startTime;
-			$('#ping').val(interval);	
+		.on("pingReturn", function(junk){
+			time = new Date();
+			var interval = time.getTime() - startTime;
+			$('#ping').text("PING:" + interval);	
 		});
 	});
 	
 	function ping(){
-		socket.emit("ping", time.getDate());
+		startTime = new Date().getTime();
+		socket.emit("ping", startTime);
 	}
 	
 	window.setInterval("ping()", 2000);
@@ -46,7 +48,7 @@
 
   </head>
   <body>
-	<button text="ping" style="width:100%" onclick="return ping();">PING</button>
-    <div id = "ping" />
+  
+	<div style="position:float; top:0; left:0;" id = "ping" >  
   </body>
 </html>
