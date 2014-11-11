@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Ping test</title>
+    <title>Pong test</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
@@ -17,26 +17,28 @@
 	<script>
 	
 	 var socket = io.connect('http://localhost:1337');
-	 var pingSocket = io.connect('http://localhost:1337/ping');
+	 var pongSocket = io.connect('http://localhost:1337/pong');
 	 var startTime;
 	 
 	$(document).ready(function(){
-		socket.on("pingReturn", function(junk){
+		socket.on('chat', function(msg){
+			$('#messages').append($('<li>').text(msg));
+		})
+		.on("pingReturn", function(junk){
 			time = new Date();
 			var interval = time.getTime() - startTime;
 			$('#ping').text("PING:" + interval);	
 		});
 		
-		pingSocket.on("pong", function(){
-			$('#messages').append('<li>Pong!</li>');
-		});
-		
-		pingSocket.on("ping", function(){
+		pongSocket.on("ping", function(){
 			$('#messages').append('<li>Ping!</li>');
 		});
 		
-		$('#btnPing').click(function(){
-			pingSocket.emit('ping');
+		pongSocket.on("pong", function(){
+			$('#messages').append('<li>Pong!</li>');
+		});
+		$('#btnPong').click(function(){
+			pongSocket.emit('pong');
 		});
 	});
 	
@@ -46,13 +48,14 @@
 	}
 	
 	window.setInterval("getPing()", 2000);
+
 	
 	</script>
 
 
   </head>
   <body>
-	<button id="btnPing">Ping</button>
+	<button id="btnPong">Pong</button>
 	<ul id="messages"></ul>
 	<div style="position:float; top:0; left:0;" id = "ping" >  
   </body>
