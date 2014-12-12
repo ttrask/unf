@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="SpaceCircle.svg">
+   sodipodi:docname="SpaceCircle.svg"
+   inkscape:export-filename="C:\Projects\UNF\Space Hardware\Logo\SpaceCircle.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <linearGradient
@@ -40,6 +43,28 @@
          offset="1"
          id="stop4526" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4522-6"
+       id="linearGradient4880"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.03907083,-0.1920493,0.18949258,0.0481199,943.1361,701.0824)"
+       x1="1148.8314"
+       y1="1344.6428"
+       x2="1148.8314"
+       y2="1609.7834" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4522-6">
+      <stop
+         style="stop-color:#d02433;stop-opacity:1;"
+         offset="0"
+         id="stop4524-8" />
+      <stop
+         style="stop-color:#d02433;stop-opacity:0"
+         offset="1"
+         id="stop4526-5" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -48,9 +73,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.68844372"
-     inkscape:cx="380.04586"
-     inkscape:cy="540.56721"
+     inkscape:zoom="1.3768874"
+     inkscape:cx="389.47322"
+     inkscape:cy="519.93299"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -71,7 +96,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -670,56 +695,6 @@
        sodipodi:rx="8.0904922"
        sodipodi:ry="8.0904922"
        d="m 74.091873,661.88947 a 8.0904922,8.0904922 0 1 1 -16.180984,0 8.0904922,8.0904922 0 1 1 16.180984,0 z" />
-    <text
-       xml:space="preserve"
-       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
-       x="120.73103"
-       y="678.26898"
-       id="text4027"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4029"
-         x="120.73103"
-         y="678.26898">SPACE HARDWARE</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4053"
-       y="676.26898"
-       x="124.73103"
-       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#929497;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
-       xml:space="preserve"><tspan
-         y="676.26898"
-         x="124.73103"
-         id="tspan4055"
-         sodipodi:role="line">SPACE HARDWARE</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#d02433;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
-       x="126.73103"
-       y="674.26898"
-       id="text4078"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4080"
-         x="126.73103"
-         y="674.26898">SPACE HARDWARE</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffce00;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
-       x="256.58441"
-       y="732.995"
-       id="text4165"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4167"
-         x="256.58441"
-         y="732.995">-NORTH FLORIDA-</tspan></text>
-    <path
-       sodipodi:nodetypes="sssss"
-       id="path4493-1-2-1"
-       d="m 474.30476,743.36348 c -1.3173,0.32879 -69.7113,16.10491 -70.0357,15.0265 -0.3246,-1.07832 67.5435,-18.60285 68.8608,-18.93162 1.3174,-0.32882 2.6484,0.2788 2.9728,1.3572 0.3245,1.07831 -0.4805,2.21911 -1.7979,2.54792 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0" />
     <g
        id="g4621"
        transform="matrix(0.94366566,0.33090049,-0.33090049,0.94366566,-718.05975,-422.00213)">
@@ -735,6 +710,80 @@
          d="m 1244.3051,543.28786 c 1.316,0.33395 69.0298,18.81287 68.8051,19.91638 -0.2246,1.10347 -68.3027,-15.58635 -69.6187,-15.92032 -1.3161,-0.33396 -2.2009,-1.49924 -1.9762,-2.60274 0.2246,-1.10346 1.4737,-1.72729 2.7898,-1.39332 z"
          style="fill:#ffffff;fill-opacity:1;stroke:none"
          inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffce00;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
+       x="375.71649"
+       y="717.30096"
+       id="text4165"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4167"
+         x="375.71649"
+         y="717.30096">University of</tspan><tspan
+         sodipodi:role="line"
+         x="375.71649"
+         y="748.55096"
+         id="tspan4878">North Florida</tspan></text>
+    <g
+       id="g4930"
+       transform="translate(976.14786,398.67548)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4078-8-2"
+         y="274.36417"
+         x="-851.27179"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2b0000;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
+         xml:space="preserve"><tspan
+           y="274.36417"
+           x="-851.27179"
+           id="tspan4080-9-7"
+           sodipodi:role="line">SPACE HARDWARE CLUB</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4078-8"
+         y="272.53027"
+         x="-849.55664"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e3dedb;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
+         xml:space="preserve"><tspan
+           y="272.53027"
+           x="-849.55664"
+           id="tspan4080-9"
+           sodipodi:role="line">SPACE HARDWARE CLUB</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4078"
+         y="271.66373"
+         x="-848.40106"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#d02433;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Heavy'"
+         xml:space="preserve"><tspan
+           y="271.66373"
+           x="-848.40106"
+           id="tspan4080"
+           sodipodi:role="line">SPACE HARDWARE CLUB</tspan></text>
+    </g>
+    <g
+       transform="matrix(-0.88086475,0.47336803,-0.47336803,-0.88086475,1882.0179,598.29182)"
+       id="g4621-7">
+      <g
+         id="g4661">
+        <g
+           id="g4665">
+          <path
+             inkscape:connector-curvature="0"
+             style="fill:url(#linearGradient4880);fill-opacity:1;stroke:none"
+             d="m 1243.306,542.4625 c 1.3682,0.34743 36.9444,10.71717 36.6623,12.10376 -0.2821,1.3866 -36.3157,-6.73503 -37.6838,-7.08245 -1.3682,-0.34743 -2.2486,-1.75314 -1.9665,-3.13974 0.2821,-1.38659 1.6199,-2.22899 2.988,-1.88157 z"
+             id="path4493-1-6"
+             sodipodi:nodetypes="sssss" />
+          <path
+             sodipodi:nodetypes="sssss"
+             id="path4493-1-2-1"
+             d="m 1244.3051,543.28786 c 1.316,0.33395 69.0298,18.81287 68.8051,19.91638 -0.2246,1.10347 -68.3027,-15.58635 -69.6187,-15.92032 -1.3161,-0.33396 -2.2009,-1.49924 -1.9762,-2.60274 0.2246,-1.10346 1.4737,-1.72729 2.7898,-1.39332 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:none"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
     </g>
   </g>
 </svg>
