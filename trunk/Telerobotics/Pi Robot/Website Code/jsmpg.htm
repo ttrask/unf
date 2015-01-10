@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=320, initial-scale=1"/>
+	<title>jsmpeg streaming</title>
+	<style type="text/css">
+		body {
+			background: #333;
+			text-align: center;
+			margin-top: 10%;
+		}
+		#videoCanvas {
+			/* Always stretch the canvas to 640x480, regardless of its
+			internal size. */
+			width: 640px;
+			height: 480px;
+		}
+	</style>
+</head>
+<body>
+	<!-- The Canvas size specified here is the "initial" internal resolution. jsmpeg will
+		change this internal resolution to whatever the source provides. The size the
+		canvas is displayed on the website is dictated by the CSS style.
+	-->
+	<div>
+	<canvas id="videoCanvas" width="640" height="480">
+		<p>
+			Please use a browser that supports the Canvas Element, like
+			<a href="http://www.google.com/chrome">Chrome</a>,
+			<a href="http://www.mozilla.com/firefox/">Firefox</a>,
+			<a href="http://www.apple.com/safari/">Safari</a> or Internet Explorer 10
+		</p>
+	</canvas></div>
+	<div>
+		<button  onclick="javascript:sendCommand('1')"; >1</button>
+		<button  onclick="javascript:sendCommand('2')"; >2</button>
+		<button  onclick="javascript:sendCommand('3')"; >3</button>
+		<button  onclick="javascript:sendCommand('4')"; >4</button>
+		<button  onclick="javascript:sendCommand('5')"; >5</button>
+		<button  onclick="javascript:sendCommand('6')"; >Forward/Stop</button>
+		<button  onclick="javascript:sendCommand('7')"; >Reverse/Stop</button>
+	</div>
+	
+	<script type="text/javascript" src="jsmpg.js"></script>
+	<script type="text/javascript">
+		// Show loading notice
+		var canvas = document.getElementById('videoCanvas');
+		var ctx = canvas.getContext('2d');
+		ctx.fillStyle = '#444';
+		ctx.fillText('Loading...', canvas.width/2-30, canvas.height/3);
+
+		var robotClient = new WebSocket('ws://127.0.0.1:8084');
+		
+		function sendCommand(msg){
+			if(robotClient){
+				console.log('sending robot message: '+msg);
+				robotClient.send(msg);
+			}
+			else{
+				console.log('robot client not connected');
+			}
+		};
+		
+		// Setup the WebSocket connection and start the player
+		var videoClient = new WebSocket( 'ws://127.0.0.1:8084' );
+		var player = new jsmpeg(videoClient, {canvas:canvas});
+		
+		
+		
+	</script>
+</body>
+</html>
